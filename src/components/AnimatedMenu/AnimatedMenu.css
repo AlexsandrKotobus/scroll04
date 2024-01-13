@@ -1,0 +1,47 @@
+.header{
+    /* фиксируем сверху */
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    padding: 10px 16px;
+    background-color: #306fe4;
+  }
+  .mobile-menu{
+    /* боковая панель */
+    position: absolute;
+    top: 0;
+    left:-210px;    /* начальное положение */
+    width: 200px;
+    height: 100vh;
+    background-color: #306fe4;
+    box-shadow: 0 00 4px 4px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s;   /* время анимации */
+  
+  }
+  /* дополнительный класс */
+  .move-right{
+    transform: translateX(210px);
+  }
+  /* конечное состояние меню */
+  .entering, .entered {
+    transform: translateX(210px);
+  }
+  /* начальное состояник меню */
+  .exiting, 
+  .exited {
+    transform: translateX(0px);
+  }
+  
+  .menu-button {
+    /* кнопка-иконка */
+    margin-left: auto;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    margin-right: 35px;
+    background-color: transparent;
+    border: 0;
+  
+  }
