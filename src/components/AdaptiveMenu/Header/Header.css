@@ -1,0 +1,92 @@
+.header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    height: 50px;
+    background-color: rgb(245, 145, 4);
+    box-shadow: 0 0 4px 4px rgb(4, 4, 4);
+    z-index: 1;
+}
+.header__logo{
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 700px;
+    color: rgb(253, 250, 250);
+}
+.header__nav{
+    margin-left: auto;
+
+}
+
+.header__nav-list{
+    display: flex;
+    list-style-type: none;
+
+}
+.header__nav-item{
+    font-size: 20px;
+    line-height: 1;
+    color: rgb(255, 253, 253);
+
+}
+/* все, кроме первого */
+.header__nav-item:nth-child(n+2){
+    margin-left: 20px;
+}
+.header__menu-button{
+    display: none;
+
+}
+@media(max-width: 576px){
+    /* типа мобильное устройство */
+    .header__nav{
+        position: fixed;
+        top: 0;
+        /* left: 0; */ 
+        left: -225px;
+        display: flex;
+        flex-direction: column;
+        width: 220px;
+        height: 100%;
+        background-color:  rgb(255, 253, 253);
+        border: 2px solid  rgb(245, 145, 4);
+        border-top-right-radius: 16px;
+        box-shadow:  0 0 4px 4px rgb(4, 4, 4);
+        /* для анимации */
+        transition: transform 0.3s linear;
+    }
+    .header__nav.active{
+        transform: translateX(100%);
+    }
+
+    .header__nav-list{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding-top: 40px;
+        padding-left: 60px;
+    }
+    .header__nav-item{
+        margin: 10px 0;
+        color:  rgb(245, 145, 4);
+
+    }
+    /* убираем отступы слева всем элементам меню */
+    .header__nav-item:nth-child(n+2){
+        margin-left: 0;
+    }
+    .header__menu-button{
+        display: block;
+        margin-left: auto;
+        width: 24px;
+        height: 24px;
+        background-color: transparent;
+        padding: 0;
+        border: 0;
+
+    }
+}

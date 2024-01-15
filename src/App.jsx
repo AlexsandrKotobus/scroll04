@@ -1,20 +1,25 @@
 import React  from 'react'
 
+
 // import  AnimatedMenu from './components/AnimatedMenu/AnimatedMenu'
 // import DropMenu from './components/DropMenu/DropMenu';
 
-import FormCheck from './components/Checkbox/FormCheck';
+// import FormCheck from './components/Checkbox/FormCheck';
+import Header from './components/AdaptiveMenu/Header/Header'
+
+
 
 function App() {
  
   return (
     <section>
-      {/* <div className="App"> */}
+     
       {/* <AnimatedMenu/> */}
       {/* <DropMenu /> */}
-   
        
-    <FormCheck />
+       {/* <FormCheck />  */}
+
+      <Header/>
 
     </section>
     

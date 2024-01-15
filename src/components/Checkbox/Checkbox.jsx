@@ -2,6 +2,13 @@ import React from "react";
 import './Checkbox.css'
 
 export const Checkbox = ({isChecked, onChange, children}) => {
+    console.log(isChecked);
+    console.log(onChange);
+    console.log(children);
+
+
+
+
     return (
     <label className="checkbox-wrapper">
         <input 
@@ -13,6 +20,7 @@ export const Checkbox = ({isChecked, onChange, children}) => {
         onChange={()=> onChange(console.log(1000))}
          />
         <p>{children}</p>
+        
     </label>
     );
 }
