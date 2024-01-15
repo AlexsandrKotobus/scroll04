@@ -6,8 +6,7 @@ import React  from 'react'
 import FormCheck from './components/Checkbox/FormCheck';
 
 function App() {
-  // const [rulesChecked, setRulesChecked] = useState(false);
-  // const [mailChecked, setMailCheked] = useState(false);
+ 
   return (
     <section>
       {/* <div className="App"> */}
