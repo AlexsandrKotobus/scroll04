@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import { ReactComponent as Icon} from '../../../menuIcon.svg';
 import './Header.css';
 
+
 export const Header =()=> {
     const [isOpen, setOpen] = useState(false)
     return (
@@ -17,9 +18,9 @@ export const Header =()=> {
                 </ul>
             </nav>
             <button className="header__menu-button" onClick={()=> setOpen(!isOpen)}><Icon/></button>
-
-
+           
         </header>
+       
     )
 }
 

@@ -6,6 +6,7 @@ import React  from 'react'
 
 // import FormCheck from './components/Checkbox/FormCheck';
 import Header from './components/AdaptiveMenu/Header/Header'
+import Main from './components/AdaptiveMenu/Main/Main'
 
 
 
@@ -20,6 +21,7 @@ function App() {
        {/* <FormCheck />  */}
 
       <Header/>
+      <Main/>
 
     </section>
     

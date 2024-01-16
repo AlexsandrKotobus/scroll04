@@ -1,4 +1,5 @@
 .header{
+    /* полоска вверху */
     position: fixed;
     left: 0;
     top: 0;
@@ -24,7 +25,7 @@
 
 .header__nav-list{
     display: flex;
-    list-style-type: none;
+    list-style-type: none;     /* черные точки у списка */
 
 }
 .header__nav-item{
@@ -33,7 +34,7 @@
     color: rgb(255, 253, 253);
 
 }
-/* все, кроме первого */
+/* отступы слева всем элементам, кроме первого */
 .header__nav-item:nth-child(n+2){
     margin-left: 20px;
 }
@@ -47,7 +48,7 @@
         position: fixed;
         top: 0;
         /* left: 0; */ 
-        left: -225px;
+        left: -225px; /* начальное значение, чтобы меню выезжало слева*/
         display: flex;
         flex-direction: column;
         width: 220px;
@@ -56,7 +57,7 @@
         border: 2px solid  rgb(245, 145, 4);
         border-top-right-radius: 16px;
         box-shadow:  0 0 4px 4px rgb(4, 4, 4);
-        /* для анимации */
+        /* для анимации - плавное открытие и закрытие меню*/
         transition: transform 0.3s linear;
     }
     .header__nav.active{
@@ -64,7 +65,7 @@
     }
 
     .header__nav-list{
-        flex: 1;
+        flex: 1; /*список элементов растягиваем на всю высоту меню*/
         display: flex;
         flex-direction: column;
         padding-top: 40px;
