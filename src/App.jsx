@@ -5,9 +5,10 @@ import React  from 'react'
 // import DropMenu from './components/DropMenu/DropMenu';
 
 // import FormCheck from './components/Checkbox/FormCheck';
-import Header from './components/AdaptiveMenu/Header/Header'
-import Main from './components/AdaptiveMenu/Main/Main'
+// import Header from './components/AdaptiveMenu/Header/Header'
+// import Main from './components/AdaptiveMenu/Main/Main'
 
+import FormCheckValid from './components/CheckboxValid/FormCheckValid';
 
 
 function App() {
@@ -20,9 +21,8 @@ function App() {
        
        {/* <FormCheck />  */}
 
-      <Header/>
-      <Main/>
-
+      {/* <Header/>   <Main/> */}
+      <FormCheckValid/>
     </section>
     
   );

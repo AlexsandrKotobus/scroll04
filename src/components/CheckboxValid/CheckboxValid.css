@@ -52,5 +52,16 @@
 }
 .checkbox-element:checked{
     /* состояние checked */
-    background-color: rgb(21, 21, 198);
+    background-color: rgb(31, 9, 152);
+}
+.checkbox-element.error{
+    border-color: rgb(247, 6, 6);
+}
+.checkbox-wrapper span{
+    position: absolute;
+    top: 100%;
+    left: 26px;
+    font-size: 14px;
+    line-height: 1;
+    color: rgb(247, 6, 6);
 }
