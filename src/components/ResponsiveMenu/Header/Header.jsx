@@ -10,7 +10,8 @@ export const Header =()=> {
     useClickOutside(menuRef, ()=> {
         //функция, звкрывающая меню
         // по услови. - если сейчас оно открыто - закрыть с задержкой 50 млсек
-        if(setOpen) setTimeout(() => setOpen(false), 50)
+        if(isOpen) setTimeout(() => setOpen(false), 50)
+        // setOpen(false);
 
         
     });
