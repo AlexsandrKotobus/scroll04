@@ -20,6 +20,7 @@ function FormCheckValid() {
   }
   return (
     <section>
+      {/* оборачиваем нашу форму в FormProvider и передаем все методы, которые мы получили из useForm, как пропсы */}
       <FormProvider {...method}>
         <form className='form' onSubmit={method.handleSubmit(onSubmit)}>
           <CheckboxValid name='rules'> Принимаю ЭТО <a href="./doc.pdf"> правила </a> участия в акции   </CheckboxValid>

@@ -9,7 +9,8 @@ const mailingCheckbox = yup.mixed().oneOf([true], 'Необходимо согл
 
 // создаем схему валидации - например, для новых пользователей
 export const chemaSignUp = yup.object({
+  // !!!
+  //если какойто параметр необязателен для проверки  - его можно закоментировать
   rules: rulesCheckbox,
-  //если какойто параметр необязателен для проверки  - его можно закоменнтировать
   mailings: mailingCheckbox,  
 });

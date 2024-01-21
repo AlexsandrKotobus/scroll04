@@ -1,14 +1,14 @@
 import React  from 'react'
 
 
-// import  AnimatedMenu from './components/AnimatedMenu/AnimatedMenu'
+// import AnimatedMenu from './components/AnimatedMenu/AnimatedMenu'
 // import DropMenu from './components/DropMenu/DropMenu';
 
 // import FormCheck from './components/Checkbox/FormCheck';
-// import Header from './components/AdaptiveMenu/Header/Header'
-// import Main from './components/AdaptiveMenu/Main/Main'
+import Header from './components/ResponsiveMenu/Header/Header'
+// import Main from './components/ResponsiveMenu/Main/Main'
 
-import FormCheckValid from './components/CheckboxValid/FormCheckValid';
+// import FormCheckValid from './components/CheckboxValid/FormCheckValid';
 
 
 function App() {
@@ -21,8 +21,9 @@ function App() {
        
        {/* <FormCheck />  */}
 
-      {/* <Header/>   <Main/> */}
-      <FormCheckValid/>
+      <Header/>   
+      {/* <Main/> */}
+      {/* <FormCheckValid/> */}
     </section>
     
   );

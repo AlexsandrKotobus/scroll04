@@ -4,11 +4,12 @@ import './CheckboxValid.css'
 
 export const CheckboxValid = ({name, children}) => {
        
-// получаем регистр
+// получаем регистр из useFormContext()
 const { 
     register,
     formState: {errors}
 } = useFormContext();
+// получаем текст ошибки из errors[name]
 const error = errors[name]?.message;
     return (
     <label className="checkbox-wrapper">

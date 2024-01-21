@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import './DropMenu.css';
-import useClicOunside from './useClicOunside' 
+import useClickOutside from '../../hooks/useClickOutside' 
 
 import {BsPersonCircle,
     BsFillPersonFill,
@@ -14,7 +14,7 @@ import {BsPersonCircle,
 function DropMenu(){
     const [isOpen, setOpen] = useState(false);
     const menuRef = useRef(null);
-    useClicOunside(menuRef, ()=> {
+    useClickOutside(menuRef, ()=> {
         if(isOpen) setTimeout(() => setOpen(false), 50);
     })
     return(
