@@ -5,6 +5,7 @@
 @media(max-width: 576px){
     .header__menu-button{
         display: block;
+        /* задаем позицию */
         position: relative;
         margin-left: auto;
         width: 28px;
@@ -28,20 +29,21 @@
         border-radius: 3px;
         transform-origin: 50% 50%;
     }
-    .header__menu-button::before{
-        transform: translateY(-10px);
-    }
-    .header__menu-button::after{
-        transform: translateY(10px);
-    }
+    /* поднимаем верхнюю линию */
+    .header__menu-button::before{        transform: translateY(-10px);    }
+     /* опускаем нижнюю линию */
+    .header__menu-button::after{        transform: translateY(10px);    }
     /* active */
     .header__menu-button.active::before{
+        /* анимация для верхней линии */
         animation: moveTopLine 0.4s forwards;
     }
     .header__menu-button.active span{
+        /* анимация для средней линии - спана */
         animation: moveMidLine 0.4s forwards;
     }
     .header__menu-button.active::after{
+        /* анимация для нижней линии */
         animation: moveBotLine 0.4s forwards;
     }
     /* unactive */
@@ -95,14 +97,14 @@
     75%{        transform: scale(1) translateY(0) rotate(0); }
     100%{       transform: scale(1) translateY(10px);}
     }
-    @keyframes moveMidLineRev {
-        0%{    opacity: 0;}
-        25%{   opacity: 0; }
-        50%{   opacity: 0;}
-        75%{   opacity: 1;}
-        100%{  opacity: 1;}
-        
-        }
+@keyframes moveMidLineRev {
+    0%{    opacity: 0;}
+    25%{   opacity: 0; }
+    50%{   opacity: 0;}
+    75%{   opacity: 1;}
+    100%{  opacity: 1;}
+    
+    }
 
 @keyframes moveBotLineRev {
     0%{         transform: scale(1) translateY(0) rotate(-45deg);    }
@@ -112,13 +114,6 @@
     100%{       transform: scale(1) translateY(-10px);}
     }
 /*  */
-
-
-/*  */
-
-
-
-
 
 }
 

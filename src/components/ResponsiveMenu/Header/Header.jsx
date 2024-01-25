@@ -35,7 +35,7 @@ export const Header =()=> {
                     <li className="header__nav-item">LogIn</li>
                 </ul>
             </nav>
-            <MenuButton isActive = {isOpen} onClick={()=> setOpen(!isOpen)}></MenuButton>
+            <MenuButton isActive = {isOpen} onClick={()=> setOpen(!isOpen)} />
         </header>
 
         </div>
