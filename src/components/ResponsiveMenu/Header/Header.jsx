@@ -9,13 +9,14 @@ export const Header =()=> {
     const [isOpen, setOpen] = useState(false);
 // useEffect - отработает только 1 раз
 useEffect(() => {
-    let startTouchX = 0;  
-    let endTouchX = 0;
+    let startTouchX = 0;  //координата начала свайпа
+    let endTouchX = 0;    //координата начала свайпа
     //для диагонали
     let startTouchY = 0;
     let endTouchY = 0;
     // подписываемся на событие touchstart
      document.addEventListener("touchstart", (event)=> {
+        //получаем значение startTouchX  из события event
         startTouchX = event.changedTouches[0].pageX;
         startTouchY = event.changedTouches[0].pageY;
         console.log('start: ', startTouchX, startTouchY);
@@ -23,6 +24,7 @@ useEffect(() => {
     });
     // координаты конца свайпа
     document.addEventListener("touchend", (event) => {
+        //получаем значение endTouchX  из события event
         endTouchX = event.changedTouches[0].pageX
         endTouchY = event.changedTouches[0].pageY
         console.log('end: ', endTouchX, endTouchY);
