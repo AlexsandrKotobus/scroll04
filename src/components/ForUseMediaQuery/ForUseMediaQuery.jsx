@@ -15,7 +15,7 @@ const ForUseMediaQuery = () => {
                 {isMobile && <p>Mobile</p>}
                 {isTablet  && <p>Tablet</p>}
             </div>
-            <div className="111"></div>
+           
         </div>
         
     );
