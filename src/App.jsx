@@ -10,11 +10,12 @@ import React  from 'react'
 
 // import FormCheckValid from './components/CheckboxValid/FormCheckValid';
 // import MenuRTG from './components/MenuReactTransitionGroup/MenuRTG';
-import Accordion from './components/Accordion/Accordion';
-import faqList from './components/Accordion/faqList';
+// import Accordion from './components/Accordion/Accordion';
+// import faqList from './components/Accordion/faqList';
+import ForUseMediaQuery from './components/ForUseMediaQuery/ForUseMediaQuery'
 
 function App() {
- console.log(faqList);
+//  console.log(faqList);
   return (
     <section>
      
@@ -27,7 +28,8 @@ function App() {
       {/* <Main/> */}
       {/* <FormCheckValid/> */}
       {/* <MenuRTG/> */}
-      <Accordion faqList={faqList}/>
+      {/* <Accordion faqList={faqList}/> */}
+      <ForUseMediaQuery/>
     </section>
     
   );

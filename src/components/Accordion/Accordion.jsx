@@ -4,6 +4,7 @@ import AccordionItem from './AccordionItem';
 
 
 const Accordion = ({faqList}) => {
+    //  id  открытого ответа
  const [openId, setId] = useState(null);
 
     return (
