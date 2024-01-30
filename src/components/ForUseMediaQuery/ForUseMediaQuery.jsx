@@ -1,4 +1,3 @@
-// import { findRenderedComponentWithType } from "react-dom/test-utils";
 import { useMediaQuery } from "../../hooks/useMediaQuery";
 
 import React from 'react';
@@ -11,7 +10,7 @@ const ForUseMediaQuery = () => {
     return (
         <div>
             <div >
-            lijnolk
+            
                 {isMobile && <p>Mobile</p>}
                 {isTablet  && <p>Tablet</p>}
             </div>

@@ -12,7 +12,9 @@ import React  from 'react'
 // import MenuRTG from './components/MenuReactTransitionGroup/MenuRTG';
 // import Accordion from './components/Accordion/Accordion';
 // import faqList from './components/Accordion/faqList';
-import ForUseMediaQuery from './components/ForUseMediaQuery/ForUseMediaQuery'
+// import ForUseMediaQuery from './components/ForUseMediaQuery/ForUseMediaQuery'
+import ExampleuseState from './components/forHooks/exampleuseState'
+
 
 function App() {
 //  console.log(faqList);
@@ -29,7 +31,8 @@ function App() {
       {/* <FormCheckValid/> */}
       {/* <MenuRTG/> */}
       {/* <Accordion faqList={faqList}/> */}
-      <ForUseMediaQuery/>
+      {/* <ForUseMediaQuery/> */}
+      <ExampleuseState/>
     </section>
     
   );

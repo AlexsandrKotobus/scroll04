@@ -1,12 +1,12 @@
 ﻿import {useState, useEffect} from 'react';
 
-// вспомогателная фукция mq, которая возвращает результат проверки меддиавыражения - true/false
+// вспомогателная фукция mq, которая возвращает результат проверки медиавыражения - true/false
 const mq = (query) => {
     return window.matchMedia(query).matches;
 }
 
 export const useMediaQuery = (query) => {
-// получаем состояние isMatches и функцию setMatshesб
+// получаем состояние isMatches и функцию setMatshes
 // дефолтное значение получаем из функции mq()
     const [isMatches, setMatshes] = useState(mq(query));
     // ф-я update обновляет состояние после проверки медиавыражений
