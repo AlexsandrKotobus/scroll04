@@ -1,29 +1,21 @@
-import React, {useState} from 'react';
-
+import React, {useState } from 'react';
+import Post from "./Post"
 
 const ExampleuseState = () => {
-    const [value, setValue] = useState(1);
-    
-
-    const  addValue = () => {
-        setValue((value) => value + 1);
-        setValue((value) => value + 1);
-        setValue((value) => value + 1);
+    const [page, setPage] = useState(1);
+    const  addPage = () => {
+        setPage((page) => page + 1);
     }
 
     return (
         <div>
-            <div>Value : {value}</div>
-            {/* <div>Count : {state.count}</div> */}
-            <button onClick={addValue}>add Value</button>
-            
-            {/* <button onClick={()=> updateState('count')}>Count</button> */}
-            
+            <div>Page : {page}</div>
+            <button onClick={addPage}>add Value</button>
+            <hr/>
+            <Post page={page}></Post>
         </div>
     );
 }
-
-
 
 
 
