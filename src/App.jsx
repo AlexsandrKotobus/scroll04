@@ -13,7 +13,8 @@ import React  from 'react'
 // import Accordion from './components/Accordion/Accordion';
 // import faqList from './components/Accordion/faqList';
 // import ForUseMediaQuery from './components/ForUseMediaQuery/ForUseMediaQuery'
-import ExampleuseState from './components/forHooks/exampleuseState'
+// import ExampleuseState from './components/forHooks/exampleuseState'
+import ForUseContext from './components/ForUseContext/ForUseContext';
 
 
 function App() {
@@ -32,7 +33,8 @@ function App() {
       {/* <MenuRTG/> */}
       {/* <Accordion faqList={faqList}/> */}
       {/* <ForUseMediaQuery/> */}
-      <ExampleuseState/>
+      {/* <ExampleuseState/> */}
+      <ForUseContext/>
     </section>
     
   );
