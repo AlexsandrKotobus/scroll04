@@ -14,7 +14,10 @@ import React  from 'react'
 // import faqList from './components/Accordion/faqList';
 // import ForUseMediaQuery from './components/ForUseMediaQuery/ForUseMediaQuery'
 // import ExampleuseState from './components/forHooks/exampleuseState'
-import ForUseContext from './components/ForUseContext/ForUseContext';
+// import ForUseContext from './components/ForUseContext/ForUseContext';
+import ForUseRef from './components/ForUseRef/ForUseRef';
+// import Stopwatch from './components/ForUseRef/Stopwatch';
+
 
 
 function App() {
@@ -34,7 +37,10 @@ function App() {
       {/* <Accordion faqList={faqList}/> */}
       {/* <ForUseMediaQuery/> */}
       {/* <ExampleuseState/> */}
-      <ForUseContext/>
+      {/* <ForUseContext/> */}
+      <ForUseRef/>
+      {/* <Stopwatch/> */}
+
     </section>
     
   );
