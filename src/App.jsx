@@ -15,8 +15,9 @@ import React  from 'react'
 // import ForUseMediaQuery from './components/ForUseMediaQuery/ForUseMediaQuery'
 // import ExampleuseState from './components/forHooks/exampleuseState'
 // import ForUseContext from './components/ForUseContext/ForUseContext';
-import ForUseRef from './components/ForUseRef/ForUseRef';
+// import ForUseRef from './components/ForUseRef/ForUseRef';
 // import Stopwatch from './components/ForUseRef/Stopwatch';
+import Main from './components/Popup/Main/Main';
 
 
 
@@ -38,8 +39,9 @@ function App() {
       {/* <ForUseMediaQuery/> */}
       {/* <ExampleuseState/> */}
       {/* <ForUseContext/> */}
-      <ForUseRef/>
+      {/* <ForUseRef/> */}
       {/* <Stopwatch/> */}
+      <Main/>
 
     </section>
     
