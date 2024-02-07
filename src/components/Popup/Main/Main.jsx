@@ -2,18 +2,22 @@ import React, {useState} from 'react';
 import Simplemodal from '../SimpleModal/Simplemodal';
 import './Main.css';
 
+
 const Main = () => {
     const [modalInfoIsOpen, setModalInfoOpen] = useState(false);
     const [modalAboutIsOpen, setModalAboutOpen] = useState(false);
-    const [modalDataIsOpen, setModalDataOpen] = useState(false)
+    const [modalDataIsOpen, setModalDataOpen] = useState(false);
 
+    
     return (
         <div className='main'>
             <section className="section">
+                {/* кнопки вызова модалок */}
                 <button className="modal-show-button" onClick={()=> setModalInfoOpen(true)}>Modal Info</button>
                 <button className="modal-show-button" onClick={()=> setModalAboutOpen(true)}>Modal About</button>
                 <button className="modal-show-button" onClick={()=> setModalDataOpen(true)}>Modal Data</button>
             </section>
+            {/* Modal Info */}
             <Simplemodal 
                 isOpen = {modalInfoIsOpen}
                 onClose = {()=>  setModalInfoOpen(false)}
@@ -23,6 +27,7 @@ const Main = () => {
                         Aspernatur porro odit laudantium labore ipsam laborum quam iure 
                         corporis! A sequi nam alias consequuntur exercitationem magni? </p>
             </Simplemodal>
+            {/* Modal About */}
             <Simplemodal 
                 isOpen = {modalAboutIsOpen}
                 onClose = {()=>  setModalAboutOpen(false)}
@@ -30,7 +35,7 @@ const Main = () => {
                     <h2>Modal About</h2>
                     <p>Lorem ipsum dolor sit amet con </p>
             </Simplemodal>
-
+            {/* Modal Data */}
             <Simplemodal 
                 isOpen = {modalDataIsOpen}
                 onClose = {()=>  setModalDataOpen(false)}  >

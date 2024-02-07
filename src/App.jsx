@@ -17,7 +17,7 @@ import React  from 'react'
 // import ForUseContext from './components/ForUseContext/ForUseContext';
 // import ForUseRef from './components/ForUseRef/ForUseRef';
 // import Stopwatch from './components/ForUseRef/Stopwatch';
-import Main from './components/Popup/Main/Main';
+import Popup from './components/Popup/Popup';
 
 
 
@@ -41,7 +41,7 @@ function App() {
       {/* <ForUseContext/> */}
       {/* <ForUseRef/> */}
       {/* <Stopwatch/> */}
-      <Main/>
+      <Popup/>
 
     </section>
     

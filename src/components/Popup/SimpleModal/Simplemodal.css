@@ -48,10 +48,12 @@
 
 
 }
+/* открытие */
 .modal--entering .modal-content,
 .modal--entered .modal-content {
     transform: translateY(0);
 }
+/* закрытие */
 .modal--exiting .modal-content,
 .modal--exited .modal-content {
     transform: translateY(-50px);
