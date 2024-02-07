@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import Simplemodal from '../SimpleModal/Simplemodal';
 import './Main.css';
 
-
 const Main = () => {
     const [modalInfoIsOpen, setModalInfoOpen] = useState(false);
     const [modalAboutIsOpen, setModalAboutOpen] = useState(false);
