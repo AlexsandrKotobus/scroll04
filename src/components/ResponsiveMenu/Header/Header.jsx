@@ -1,4 +1,4 @@
-import React, {useState, useRef } from "react";
+import React, {useState, useRef, useEffect} from "react";
 // import { ReactComponent as Icon} from '../../../menuIcon.svg';
 import  {MenuButton} from '../MenuButton/MenuButton'
 import './Header.css';
@@ -7,6 +7,41 @@ import useClickOutside  from "../../../hooks/useClickOutside";
 
 export const Header =()=> {
     const [isOpen, setOpen] = useState(false);
+// useEffect - отработает только 1 раз
+useEffect(() => {
+    let startTouchX = 0;  //координата начала свайпа
+    let endTouchX = 0;    //координата начала свайпа
+    //для диагонали
+    let startTouchY = 0;
+    let endTouchY = 0;
+    // подписываемся на событие touchstart
+     document.addEventListener("touchstart", (event)=> {
+        //получаем значение startTouchX  из события event
+        startTouchX = event.changedTouches[0].pageX;
+        startTouchY = event.changedTouches[0].pageY;
+        console.log('start: ', startTouchX, startTouchY);
+
+    });
+    // координаты конца свайпа
+    document.addEventListener("touchend", (event) => {
+        //получаем значение endTouchX  из события event
+        endTouchX = event.changedTouches[0].pageX
+        endTouchY = event.changedTouches[0].pageY
+        console.log('end: ', endTouchX, endTouchY);
+        if(startTouchX < 100 &&
+            Math.abs(startTouchY - endTouchY) < 40 &&
+            endTouchX > startTouchX)
+             setOpen(true);
+        if(startTouchX < 440 &&
+        Math.abs(startTouchY - endTouchY) < 40 &&
+        endTouchX < startTouchX)
+            setOpen(false);
+
+    })
+}, []);
+
+
+
     // создаем ссылку на элемент меню - импортируем useRef
     // и получаем menuRef
     const menuRef = useRef(null);

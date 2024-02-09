@@ -17,6 +17,7 @@ const Table = memo(({data}) => {
                 })}
             </tbody>
         </table>
+
     );
 });
 
