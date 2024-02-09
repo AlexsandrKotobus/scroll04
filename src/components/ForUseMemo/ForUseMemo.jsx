@@ -1,5 +1,5 @@
 import React, {useState, memo} from 'react';
-
+import './Table.css';
 
 const Table = memo(({data}) => {
     console.log('render table')

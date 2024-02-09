@@ -18,7 +18,8 @@ import React  from 'react'
 // import ForUseRef from './components/ForUseRef/ForUseRef';
 // import Stopwatch from './components/ForUseRef/Stopwatch';
 // import Popup from './components/Popup/Popup';
-import ForUseMemo from './components/ForUseMemo/ForUseMemo'
+// import ForUseMemo from './components/ForUseMemo/ForUseMemo'
+import ForUseFetch from './components/ForUseFetch/ForUseFetch';
 
 
 
@@ -43,7 +44,8 @@ function App() {
       {/* <ForUseRef/> */}
       {/* <Stopwatch/> */}
       {/* <Popup/> */}
-      <ForUseMemo/>
+      {/* <ForUseMemo/> */}
+      <ForUseFetch/>
 
     </section>
     
