@@ -19,8 +19,8 @@ import React  from 'react'
 // import Stopwatch from './components/ForUseRef/Stopwatch';
 // import Popup from './components/Popup/Popup';
 // import ForUseMemo from './components/ForUseMemo/ForUseMemo'
-import ForUseFetch from './components/ForUseFetch/ForUseFetch';
-
+// import ForUseFetch from './components/ForUseFetch/ForUseFetch';
+import ForUseLocalStorage from './components/ForUseLocalStorage/ForUseLocalStorage';
 
 
 function App() {
@@ -45,7 +45,8 @@ function App() {
       {/* <Stopwatch/> */}
       {/* <Popup/> */}
       {/* <ForUseMemo/> */}
-      <ForUseFetch/>
+      {/* <ForUseFetch/> */}
+      <ForUseLocalStorage/>
 
     </section>
     
