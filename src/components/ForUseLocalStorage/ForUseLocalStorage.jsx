@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import UseLocalStarage from '../../hooks/useLocalStarage';
 import '../../../src/BaseCss.css'
 
@@ -10,10 +10,12 @@ const ForUseLocalStorage = () => {
             <header className='App-header'>{localData}
             <button onClick={()=> setLocalData('light')}>Light</button>
             <button onClick={()=> setLocalData('dark')}>Dark</button>
-            
             </header>
         </div>
     );
 }
 
+
+
 export default ForUseLocalStorage;
+

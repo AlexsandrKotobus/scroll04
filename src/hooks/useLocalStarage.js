@@ -1,4 +1,4 @@
-﻿import React, {useState, useEffect} from 'react';
+﻿import {useState, useEffect} from 'react';
 
 const UseLocalStarage = (key, defData) => {
     const [state, setState] = useState(()=> {
@@ -6,7 +6,7 @@ const UseLocalStarage = (key, defData) => {
         return localData || defData
      })
     useEffect(()=> {
-        localStorage.setItem('theme', state)
+        localStorage.setItem(key, state)
     }, [state]);
     return [state, setState]
 }
