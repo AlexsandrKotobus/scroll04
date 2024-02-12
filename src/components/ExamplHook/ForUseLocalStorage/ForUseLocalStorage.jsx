@@ -1,5 +1,5 @@
 import React from 'react';
-import UseLocalStarage from '../../hooks/useLocalStarage';
+import UseLocalStarage from '../../../hooks/useLocalStarage';
 import '../../../src/BaseCss.css'
 
 const ForUseLocalStorage = () => {

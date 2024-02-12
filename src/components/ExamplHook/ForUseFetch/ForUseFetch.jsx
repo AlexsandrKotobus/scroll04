@@ -1,6 +1,6 @@
 import React from 'react';
 import './ForUseFetch.css'
-import {UseFetch} from '../../hooks/useFetch';
+import {UseFetch} from '../../../hooks/useFetch';
 
 const ForUseFetch = () => {
     const {loading, data, error} = UseFetch('https://jsonplaceholder.typicode.com/posts', {})
