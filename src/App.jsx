@@ -1,4 +1,19 @@
-import React  from 'react'
+import React, {useState} from 'react'
+
+// 
+// 
+// // import React, { useState } from 'react';
+// import ForUseScrollbarSize from './components/ExamplHook/ForUseScrollbarSize/ForUseScrollbarSize';
+// import reactLogo from './components/ExamplHook/ForUseScrollbarSize/assets/react.svg'
+// import viteLogo from './components/ExamplHook/ForUseScrollbarSize/assets/vite.svg'
+
+
+
+// 
+// 
+
+
+
 
 
 // import AnimatedMenu from './components/AnimatedMenu/AnimatedMenu'
@@ -21,40 +36,74 @@ import React  from 'react'
 // import ForUseMemo from './components/ExamplHook/ForUseMemo/ForUseMemo'
 // import ForUseFetch from './components/ExamplHook/ForUseFetch/ForUseFetch';
 // import ForUseLocalStorage from './components/ExamplHook/ForUseLocalStorage/ForUseLocalStorage';
-import ForuseTransition from './components/ExamplHook/ForuseTransition/ForuseTransition';
-
+// import ForuseTransition from './components/ExamplHook/ForuseTransition/ForuseTransition';
+import UsehookUseScrollbarSize from './components/ExamplHook/ForUseScrollbarSize/UsehookUseScrollbarSize'
+//
+//
+// import ForUseScrollbarSize from './components/ExamplHook/ForUseScrollbarSize/ForUseScrollbarSize'
 
 
 
 function App() {
 //  console.log(faqList);
   return (
-    <section>
+    // <section>
      
-      {/* <AnimatedMenu/> */}
-      {/* <DropMenu /> */}
+//       {/* <AnimatedMenu/> */}
+//       {/* <DropMenu /> */}
        
-       {/* <FormCheck />  */}
+//        {/* <FormCheck />  */}
 
-      {/* <Header/>    */}
-      {/* <Main/> */}
-      {/* <FormCheckValid/> */}
-      {/* <MenuRTG/> */}
-      {/* <Accordion faqList={faqList}/> */}
-      {/* <ForUseMediaQuery/> */}
-      {/* <ExampleuseState/> */}
-      {/* <ForUseContext/> */}
-      {/* <ForUseRef/> */}
-      {/* <Stopwatch/> */}
-      {/* <Popup/> */}
-      {/* <ForUseMemo/> */}
-      {/* <ForUseFetch/> */}
-      {/* <ForUseLocalStorage/> */}
-      <ForuseTransition/>
+//       {/* <Header/>    */}
+//       {/* <Main/> */}
+//       {/* <FormCheckValid/> */}
+//       {/* <MenuRTG/> */}
+//       {/* <Accordion faqList={faqList}/> */}
+//       {/* <ForUseMediaQuery/> */}
+//       {/* <ExampleuseState/> */}
+//       {/* <ForUseContext/> */}
+//       {/* <ForUseRef/> */}
+//       {/* <Stopwatch/> */}
+//       {/* <Popup/> */}
+//       {/* <ForUseMemo/> */}
+//       {/* <ForUseFetch/> */}
+//       {/* <ForUseLocalStorage/> */}
+//       {/* <ForuseTransition/> */}
+      <UsehookUseScrollbarSize/>
 
-    </section>
+    // </section>
     
   );
 }
 
 export default App;
+
+
+
+// const App = () => {
+//   const [count, setCount] = useState(0);
+//   const {width, height} = ForUseScrollbarSize();
+  
+//   return (
+//   <>
+//       <div>    
+//           <a href="https://vitejs.dev" >  <img src={viteLogo} className="logo" alt="Vite logo" />  </a>
+//           <a href="https://react.dev"> <img src={reactLogo} className="logo react" alt="React logo" /> </a>
+      
+//       </div>
+//     <h1>Vite + React</h1>
+//     <div className="card">
+//       <button onClick={() => setCount((count) => count + 1)}>
+//         count is {count}
+//       </button>
+//           <p>Ширина скроллбара: {width}</p>
+//           <p>Высота скроллбара: {height}</p>
+          
+//       </div>
+//           <p className="read-the-docs">
+//           Click on the Vite and React logos to learn more
+//           </p>
+//       </>
+//   );
+// }
+// export default App;
