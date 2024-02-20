@@ -6,14 +6,7 @@ import React from 'react'
 // import ForUseScrollbarSize from './components/ExamplHook/ForUseScrollbarSize/ForUseScrollbarSize';
 // import reactLogo from './components/ExamplHook/ForUseScrollbarSize/assets/react.svg'
 // import viteLogo from './components/ExamplHook/ForUseScrollbarSize/assets/vite.svg'
-
-
-
-// 
-// 
-
-
-
+//
 
 
 // import AnimatedMenu from './components/AnimatedMenu/AnimatedMenu'
@@ -41,7 +34,8 @@ import React from 'react'
 //
 //
 // import ForUseScrollbarSize from './components/ExamplHook/ForUseScrollbarSize/ForUseScrollbarSize'
-import ForUseLoading from './components/ExamplHook/ForUseLoading/ForUseLoading'
+// import ForUseLoading from './components/ExamplHook/ForUseLoading/ForUseLoading'
+import AppModal from './components/Modal/CustomModal/AppModal';
 
 
 function App() {
@@ -91,8 +85,10 @@ function App() {
       //       {/* <ForUseLocalStorage/> */}
       //       {/* <ForuseTransition/> */}
       // <UsehookUseScrollbarSize />
+      /* <ForUseLoading /> */
       <>
-      <ForUseLoading />
+      
+      <AppModal/>
       </>
 
     
