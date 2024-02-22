@@ -6,9 +6,9 @@ import './AppModal.css'
 const AppModal = () => {
     return (
         <>
-        {/* <Header/> */}
+        <Header/>
         <Main/>
-        {/* <Footer/> */}
+        <Footer/>
         </>
     );
 }

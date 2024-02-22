@@ -36,6 +36,7 @@ import React from 'react'
 // import ForUseScrollbarSize from './components/ExamplHook/ForUseScrollbarSize/ForUseScrollbarSize'
 // import ForUseLoading from './components/ExamplHook/ForUseLoading/ForUseLoading'
 import AppModal from './components/Modal/CustomModal/AppModal';
+import SimpleModal from './components/Modal/SimpleModal/SimpleModal'
 
 
 function App() {
@@ -86,9 +87,11 @@ function App() {
       //       {/* <ForuseTransition/> */}
       // <UsehookUseScrollbarSize />
       /* <ForUseLoading /> */
+      /* <AppModal/> */
       <>
       
       <AppModal/>
+      <SimpleModal/>
       </>
 
     
